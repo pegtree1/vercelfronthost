@@ -240,6 +240,8 @@ const AdminPage = () => {
       });
     }
   };
+  
+  familyMembers.sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <div className="admin-page">
@@ -445,6 +447,7 @@ const AdminPage = () => {
               <th>Whatsapp Number</th>
               <th>Achievements</th>
               <th>Profession</th>
+              <th>UNID</th>
               <th>Image</th>
               <th>Actions</th>
             </tr>
@@ -468,6 +471,7 @@ const AdminPage = () => {
                 <td>{member.whatsappNumber}</td>
                 <td>{member.achievements}</td>
                 <td>{member.profession}</td>
+                <td>{member.unid}</td>
                 <td>
                   {member.img && (
                     <img src={member.img} alt="Member" width="50" height="50" />

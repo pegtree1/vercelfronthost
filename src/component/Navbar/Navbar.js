@@ -17,7 +17,7 @@ const Navbar = () => {
       <ul>
         <li><Link to="/homepage">Genealogy</Link></li>
         <li><Link to="/history">History</Link></li>
-        <li><Link to="/familytree">Family Tree</Link></li>
+        {/* <li><Link to="/familytree">Family Tree</Link></li> */}
         <li><Link to="/MemberList">Member List</Link></li>
         {isAuthenticated && (
           <li>

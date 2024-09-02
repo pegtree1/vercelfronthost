@@ -28,6 +28,7 @@ const UpdateFamilyMember = () => {
     whatsappNumber: member.whatsappNumber,
     profession: member.profession,
     achievements: member.achievements,
+    unid: member.unid,
   });
 
   const navigate = useNavigate();
@@ -289,6 +290,16 @@ const UpdateFamilyMember = () => {
             id="achievements"
             name="achievements"
             value={formData.achievements || ""}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="unid">UNID</label>
+          <input
+            type="number"
+            id="unid"
+            name="unid"
+            value={formData.unid || ""}
             onChange={handleChange}
           />
         </div>
