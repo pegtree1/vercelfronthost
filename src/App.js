@@ -7,6 +7,8 @@ import UpdateFamilyMember from './pages/UpdatePage/UpdateFamilyMember';
 import HomePage from './pages/HomePage/homepage';
 import History from './pages/HistoryPage/Historypage';
 import MemberList from './pages/MemberList/memberlist';
+import GalleryPage from './pages/Gallery/gallery';
+import AboutPage from './pages/AboutPage/about';
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import { AuthProvider, useAuth } from './context/AuthContext';
@@ -55,6 +57,15 @@ function App() {
           path: "/MemberList",
           element: <MemberList/>,
         },
+        {
+          path: "/gallery",
+          element: <GalleryPage/>,
+        },
+        {
+          path: "/aboutpet",
+          element: <AboutPage/>,
+        },
+
         // Add a new route for UpdateFamilyMember
         {
           path: "/update-family-member",

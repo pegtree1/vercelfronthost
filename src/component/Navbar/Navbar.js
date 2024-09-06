@@ -15,8 +15,10 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <ul>
+      <li><Link to="/aboutpet">About PET</Link></li>
         <li><Link to="/homepage">Genealogy</Link></li>
         <li><Link to="/history">History</Link></li>
+        <li><Link to="/gallery">Gallery</Link></li>
         {/* <li><Link to="/familytree">Family Tree</Link></li> */}
         <li><Link to="/MemberList">Member List</Link></li>
         {isAuthenticated && (

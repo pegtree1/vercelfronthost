@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchFamilyMembers,fetchFamilyMembersByUNID } from "../../redux/slice/family";
+import { fetchFamilyMembers, fetchFamilyMembersByUNID } from "../../redux/slice/family";
 import FamilyTree from "../../mytree";
-import { useNavigate,useLocation  } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import queryString from 'query-string'; 
-
-
 
 const LandingPage = () => {
   const dispatch = useDispatch();
@@ -25,9 +23,6 @@ const LandingPage = () => {
     }
   }, [dispatch, id]);
 
-
-
-
   const handleButtonClick = () => {
     if (isAuthenticated) {
       if (userRole === "admin1") {
@@ -42,12 +37,12 @@ const LandingPage = () => {
 
   const state = useSelector((state) => state.todo);
   const { data, isLoading, error } = state;
-  console.log("data",data);
+  console.log("data", data);
 
   return (
     <div
       style={{
-        height: "100vh",
+        height: 700,
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -65,22 +60,23 @@ const LandingPage = () => {
           <div>No data available</div>
         )}
       </div>
-      <div style={{ textAlign: "center", marginBottom: "20px", position: "relative" }}>
+
+      {/* Button Positioned at the top-left corner */}
+      <div style={{ position: "absolute", top: "50px", left: "10px" }}>
         <button
           type="button"
           onClick={handleButtonClick}
           style={{
-            padding: "10px 20px",
-            fontSize: "16px",
+            padding: "10px 30px",  // Smaller padding for compact button
+            fontSize: "12px",      // Smaller font size
             cursor: "pointer",
-            position: "absolute", // Absolute positioning to control placement
-            bottom: "0px", // Adjust this based on your layout needs
-            left: "50%",
-            transform: "translateX(-50%)",
-            zIndex: 1000, // Ensure it's on top
+            // zIndex: 1000,          // Ensure it's on top
+            position: "relative",
+            top: "20px",
+            left: "0px",
           }}
         >
-          {isAuthenticated ? (userRole === "admin1" ? "Admin Panel" : "Homepage") : "Login"}
+          {isAuthenticated ? (userRole === "admin1" ? "Admin" : "Homepage") : "Login"}
         </button>
       </div>
     </div>

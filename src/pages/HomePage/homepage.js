@@ -11,7 +11,7 @@ const HomePage = () => {
       <div className='navContent'>
         <Navbar /> {/* Use Navbar component */}
       </div>
-        <h1 className='textcolor'>PURAPPANTHANAM ELEVENS GENEALOGY (PEG)</h1>
+        <h1 className='textcolor'>PURAPPANTHANAM ELEVENS TEEKOY (PET)</h1>
         <div className="homeContent">
         <FamilyCircle /> {/* Use FamilyCircle component */}
       </div>

@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding-top: 60px; /* Adjust based on the height of your navbar */
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed; /* Fixed position to keep it at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure navbar is above other content */
+    padding: 10px; /* Padding for the navbar */
+    display: flex;
+    justify-content: center;
+    background-color: #ffcb2e; /* Background color for the navbar */
+    height: 60px; /* Adjust based on the actual height of your navbar */
+}
+
+.container {
+    padding: 20px;
+    margin-top: 60px; /* Space below the navbar */
+}
+
+.section {
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Light background for each section */
+    border: 1px solid #ddd; /* Optional: Border for visual separation */
+    border-radius: 8px; /* Optional: Rounded corners */
+    overflow: hidden; /* Hide overflow to keep the design clean */
+}
+
+.section-name {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #fff; /* Background color to differentiate the section name */
+    border-bottom: 1px solid #ddd; /* Border to separate the name from content */
+}
+
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between the items */
+    max-height: 400px; /* Max height for the scrollable area */
+    overflow-y: auto; /* Scrollable content */
+    padding: 10px; /* Padding for the content area */
+}
+
+.section-content img,
+.section-content video {
+    width: calc(33.33% - 10px); /* 3 items per row with gap */
+    height: 350px; /* Fixed height for smaller size */
+    object-fit: cover; /* Ensure images and videos cover the area of their container */
+}
+
+@media (max-width: 768px) {
+    .section-content img,
+    .section-content video {
+        width: calc(50% - 10px); /* 2 items per row on smaller screens */
+        height: 100px; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .section-content img,
+    .section-content video {
+        width: 100%; /* 1 item per row on very small screens */
+        height: 75px; /* Adjust height for very small screens */
+    }
+}

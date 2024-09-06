@@ -13,23 +13,23 @@ const MemberList = () => {
     try {
       const response = await newRequest.get("/family/all");
       setFamilyMembers(response.data);
-      
     } catch (error) {
       console.error("Error fetching family members:", error);
     }
   };
 
-  
-
   useEffect(() => {
     fetchFamilyMembers();
   }, []);
 
+  // Filter members by name, nickname, or familyId
   const filteredMembers = familyMembers.filter((member) =>
-    member.name.toLowerCase().includes(searchTerm.toLowerCase())
+    (member.name ? member.name.toLowerCase() : "").includes(searchTerm.toLowerCase()) ||
+    (member.nickName ? member.nickName.toLowerCase() : "").includes(searchTerm.toLowerCase()) ||
+    (member.familyId ? member.familyId.toLowerCase() : "").includes(searchTerm.toLowerCase())
   );
 
-  // Sorting filteredMembers by familyId in alphabetical order
+  // Sorting filteredMembers by name in alphabetical order
   filteredMembers.sort((a, b) => a.name.localeCompare(b.name));
 
   return (
@@ -41,9 +41,9 @@ const MemberList = () => {
       <div className="search-bar">
         <input
           type="text"
-          placeholder="Search by name"
+          placeholder="Search by name, nickname, or family ID"
           value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value.toUpperCase())}
+          onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>
       <div>
@@ -72,7 +72,6 @@ const MemberList = () => {
                 <td>{member.address}</td>
                 <td>{member.mobileNo}</td>
                 <td>{member.whatsappNumber}</td>
-                
                 <td>
                   {member.img && (
                     <img src={member.img} alt="Member" width="50" height="50" />
@@ -83,12 +82,6 @@ const MemberList = () => {
                     Tree
                   </button>
                 </td>
-                {/* <td>
-                  
-                <button >
-                    Tree
-                  </button>
-                </td> */}
               </tr>
             ))}
           </tbody>

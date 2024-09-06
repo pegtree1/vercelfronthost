@@ -1,0 +1,66 @@
+/* Ensure the body background is white */
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .main-content {
+    padding-top: 70px; /* Adjust for the fixed navbar */
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffcb2e;
+    height: 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for content sections */
+  .content-section {
+    padding: 20px;
+    margin: 20px;
+    background-color: floralwhite;
+  }
+  
+  .content-section h1, .content-section h2 {
+    color: #333;
+  }
+  
+  /* Table styling */
+  .content-section table {
+    width: auto; /* Allow table to fit content width */
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .content-section th, .content-section td {
+    border: 1px solid #ddd;
+    padding: 8px; /* Adjust padding for better fit */
+    text-align: center; /* Center align text in table cells */
+  }
+  
+  .content-section th {
+    background-color: #f4f4f4;
+  }
+  
+  /* Adjust cell width to fit content */
+  .content-section td, .content-section th {
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  .bold-cell {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
