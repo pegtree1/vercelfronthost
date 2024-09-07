@@ -4,10 +4,13 @@ import Navbar from '../../component/Navbar/Navbar'; // Import Navbar component
 
 const AboutPage = () => {
   return (
+    
     <div className="main-content">
+    
       <Navbar /> {/* Use Navbar component */}
-
+      
       <div className="content-section">
+        
         <h1>HOME PAGE (Main Tree)</h1>
         <p>
           It has all 11 branches (Children) of P J Joseph (Echachen) in the clock numbering order of seniority with Echachen and Amma at the top.
@@ -17,6 +20,7 @@ const AboutPage = () => {
       </div>
 
       <div className="content-section">
+      
         <h2>MEMBER LIST</h2>
         <p>
           Details of all the members in the group can be obtained here. Searching by Name or Nickname or Family ID is possible on top. Also, at the end of each member line, a ‘TREE’ button is provided, which will take you directly to the tree where that member belongs to.
@@ -88,6 +92,7 @@ const AboutPage = () => {
       </div>
 
       <div className="content-section">
+      
         <h2>EXAMPLE NO 1</h2>
         <p>
           PBABB (KARYACHEN)
@@ -111,8 +116,14 @@ const AboutPage = () => {
           ‘b’ - Fourth generation second child (daughter) Neenu<br />
           ‘a’ - Fifth generation first child (daughter) Kaathy
         </p>
-      </div>
+        </div>
+        <div className="content-section">
+      <div className="background-block">
+        <h2>hjadhjad</h2>
+        </div>
+        </div>
     </div>
+    
   );
 };
 

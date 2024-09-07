@@ -1,31 +1,30 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #000000; /* A light background color for better contrast */
+    background-color: #000000;
 }
 
 .navbar {
-    position: fixed; /* Fixed position to keep it at the top */
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000; /* Ensure navbar is above other content */
+    z-index: 1000;
     margin-bottom: 20px;
-    padding: 10px; /* Padding for the navbar */
-   
-    background-color: #ffcb2e; /* Background color for the navbar */
+    padding: 10px;
+    background-color: #ffcb2e;
 }
 
 .container {
     position: relative;
-    height: 100vh;
-    width: 100vw;
+    height: auto;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Ensure no scrollbars for the container */
-    padding-top: 60px; /* Adjusted to account for fixed navbar */
+    overflow: hidden;
+    padding-top: 60px;
 }
 
 .container::before {
@@ -39,26 +38,26 @@ body {
     background-size: cover;
     background-position: center;
     opacity: 0.8;
-    z-index: -1; /* Ensure behind content */
+    z-index: -1;
 }
 
 .title, .textArea {
     position: relative;
     z-index: 2;
     border-radius: 10px;
-    backdrop-filter: blur(10px); /* Adds a blur effect behind the text elements */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transitions */
-    background-color: rgba(255, 255, 255, 0.7); /* More transparent background */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .title {
     text-align: center;
     padding: 20px 40px;
     font-size: 2.5em;
-    color: #333; /* Darker text color for better readability */
+    color: #333;
     margin-bottom: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Adds a subtle text shadow */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .textArea {
@@ -77,5 +76,39 @@ body {
 
 .title:hover, .textArea:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2em;
+        padding: 15px 30px;
+    }
+
+    .textArea {
+        font-size: 1em;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5em;
+        padding: 10px 20px;
+    }
+
+    .textArea {
+        font-size: 0.9em;
+        padding: 15px;
+    }
+
+    .navbar {
+        padding: 5px;
+        top: 5px; /* Adjust the top position slightly */
+    }
+
+    .container {
+        padding-top: 55px; /* Slightly increase top padding for the container */
+    }
 }

@@ -54,6 +54,33 @@ body {
     object-fit: cover; /* Ensure images and videos cover the area of their container */
 }
 
+/* Existing CSS */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background with opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000; /* Ensure it is above all other content */
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+}
+
+
 @media (max-width: 768px) {
     .section-content img,
     .section-content video {

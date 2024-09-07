@@ -33,6 +33,7 @@ const MemberList = () => {
   filteredMembers.sort((a, b) => a.name.localeCompare(b.name));
 
   return (
+    
     <div className="member-list">
       <div className='navContent'>
         <Navbar /> {/* Use Navbar component */}
@@ -41,12 +42,13 @@ const MemberList = () => {
       <div className="search-bar">
         <input
           type="text"
-          placeholder="Search by name, nickname, or family ID"
+          placeholder="Search by Name, Nickname, or Family ID"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>
       <div>
+      <div className="table-wrapper">
         <table className="table">
           <thead>
             <tr>
@@ -86,6 +88,7 @@ const MemberList = () => {
             ))}
           </tbody>
         </table>
+      </div>
       </div>
     </div>
   );

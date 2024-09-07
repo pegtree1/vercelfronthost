@@ -5,6 +5,7 @@ import FamilyTree from "../../mytree";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import queryString from 'query-string'; 
+import "./landingpage.css";
 
 const LandingPage = () => {
   const dispatch = useDispatch();
@@ -40,15 +41,7 @@ const LandingPage = () => {
   console.log("data", data);
 
   return (
-    <div
-      style={{
-        height: 700,
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-        position: "relative", // Add this to ensure z-index works
-      }}
-    >
+    <div className="landing-page-container">
       <div style={{ flex: 1 }}>
         {isLoading ? (
           <div>Loading...</div>
@@ -70,7 +63,6 @@ const LandingPage = () => {
             padding: "10px 30px",  // Smaller padding for compact button
             fontSize: "12px",      // Smaller font size
             cursor: "pointer",
-            // zIndex: 1000,          // Ensure it's on top
             position: "relative",
             top: "20px",
             left: "0px",
