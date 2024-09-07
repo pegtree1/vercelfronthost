@@ -89,7 +89,7 @@ const MemberList = () => {
           </tbody>
         </table>
       </div>
-      </div>
+       </div> 
     </div>
   );
 };

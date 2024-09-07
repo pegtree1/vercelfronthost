@@ -11,8 +11,14 @@ body {
     right: 0;
     z-index: 1000;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 20px;
     background-color: #ffcb2e;
+    position: relative;
+
+  text-align: center;
+  
+  padding: 40px 40px;
+  
 }
 
 .container {
@@ -27,6 +33,7 @@ body {
     padding-top: 60px;
 }
 
+
 .container::before {
     content: "";
     position: absolute;
@@ -34,7 +41,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('famhouse.png');
+    background-color: #ffffff;
     background-size: cover;
     background-position: center;
     opacity: 0.8;
@@ -43,12 +50,7 @@ body {
 
 .title, .textArea {
     position: relative;
-    z-index: 2;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    background-color: rgba(255, 255, 255, 0.7);
+    
 }
 
 .title {

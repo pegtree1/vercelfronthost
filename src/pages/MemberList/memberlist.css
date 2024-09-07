@@ -77,3 +77,21 @@ td img {
   max-width: 50px;
   height: auto;
 }
+.table-wrapper {
+  min-height: 70vh; /* Use viewport height for responsive height */
+  width: 100%; /* Ensure the wrapper takes the full width of the screen */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+@media (max-width: 768px) {
+  .table-wrapper {
+    min-height: 70vh; /* Adjust the height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .table-wrapper {
+    min-height: 70vh; /* Further adjust for very small screens */
+  }
+}

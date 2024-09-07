@@ -13,7 +13,7 @@ const AboutPage = () => {
         
         <h1>HOME PAGE (Main Tree)</h1>
         <p>
-          It has all 11 branches (Children) of P J Joseph (Echachen) in the clock numbering order of seniority with Echachen and Amma at the top.
+          It has all 11 branches in a clock-like structure, with P J Joseph (Echachen) and Amma at the top, and all the children / 11 branches organized around them in a circular arrangement based on their seniority.
           To know the details of each branch, click on each branch and all sub-branches can be seen. Details of individuals can be obtained by clicking on each photo. All male members are in blue and female in pink color.
           Searching of individuals by Name or Nickname or Family ID is possible on the top right corner.
         </p>

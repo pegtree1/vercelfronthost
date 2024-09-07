@@ -14,7 +14,7 @@ body, html {
     padding-bottom: 5%;
     white-space: normal; /* Allow text to wrap */
     word-wrap: break-word; /* Ensure long words break to fit the screen */
-    text-align: left; /* Adjust as needed, e.g., left, center, right */
+    text-align: center; /* Center the text */
 }
 
 

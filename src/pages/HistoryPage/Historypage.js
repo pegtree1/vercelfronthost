@@ -7,7 +7,7 @@ const FamilyHistoryPage = () => {
   return (
     <div className="container">
       
-      <div className='navContent'>
+      <div className='navbar'>
         <Navbar /> {/* Use Navbar component */}
       </div>
       <h1 className="title">PURAPPANTHANAM COUSINS GROUP</h1>

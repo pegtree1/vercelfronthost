@@ -2,9 +2,11 @@
 
 .navbar {
   margin-bottom: 20px;
+ 
+  min-height: 60px;
   width: 100%;
   padding: 10px; /* Padding for the navbar */
- 
+  z-index: 1000;
   background-color: #ffcf23; /* Background color for the navbar */
 }
 
@@ -38,10 +40,15 @@
   z-index: 1;
   text-align: center;
   
-  padding: 20px 40px;
+  padding: 40px 40px;
   border-radius: 10px;
 
   margin-bottom: 20px;
   
 }
+.navbar ul li a.active {
+  background-color: #ffa500; /* Background color for the active link */
+  color: white; /* Text color for the active link */
+}
+
 

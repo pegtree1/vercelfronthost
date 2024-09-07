@@ -35,11 +35,6 @@ const GalleryPage = () => {
             alt="2" 
             onClick={() => openModal("https://res.cloudinary.com/dxi46aisk/image/upload/v1725639365/PET%20FOLDER/FIRST%20MEET%20AMPARA/IMG_1926_uu8zxd.jpg")} 
           />
-          <img 
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1725639356/PET%20FOLDER/IMG_1938_zuje6y.jpg" 
-            alt="3" 
-            onClick={() => openModal("https://res.cloudinary.com/dxi46aisk/image/upload/v1725639356/PET%20FOLDER/IMG_1938_zuje6y.jpg")} 
-          />
 
         <img 
             src="https://res.cloudinary.com/dxi46aisk/image/upload/t_ooo/v1725639372/PET%20FOLDER/FIRST%20MEET%20AMPARA/IMG_1976_oga37t.jpg" 

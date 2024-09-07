@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext'; // Import the useAuth hook
 import './Navbar.css'; // Make sure to create the CSS file for styling
 
@@ -15,12 +15,12 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <ul>
-      <li><Link to="/aboutpet">About PET</Link></li>
-        <li><Link to="/homepage">Genealogy</Link></li>
-        <li><Link to="/history">History</Link></li>
-        <li><Link to="/gallery">Gallery</Link></li>
-        {/* <li><Link to="/familytree">Family Tree</Link></li> */}
-        <li><Link to="/MemberList">Member List</Link></li>
+        <li><NavLink to="/aboutpet" activeClassName="active">About PET</NavLink></li>
+        <li><NavLink to="/homepage" activeClassName="active">Genealogy</NavLink></li>
+        <li><NavLink to="/history" activeClassName="active">History</NavLink></li>
+        <li><NavLink to="/gallery" activeClassName="active">Gallery</NavLink></li>
+        {/* <li><NavLink to="/familytree" activeClassName="active">Family Tree</NavLink></li> */}
+        <li><NavLink to="/MemberList" activeClassName="active">Member List</NavLink></li>
         {isAuthenticated && (
           <li>
             <button onClick={handleLogout} className="logout-button">Logout</button>
