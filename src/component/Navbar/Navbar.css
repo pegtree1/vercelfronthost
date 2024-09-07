@@ -2,7 +2,7 @@
 
 .navbar {
   margin-bottom: 20px;
- 
+ position:absolute;
   min-height: 60px;
   width: 100%;
   padding: 10px; /* Padding for the navbar */

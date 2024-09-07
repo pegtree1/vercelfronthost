@@ -11,7 +11,7 @@ body, html {
 .textcolor {
     z-index: 1;
     color: #ffffff; /* Replace with your desired color */
-    padding-bottom: 5%;
+    padding-bottom: 0.45em;
     white-space: normal; /* Allow text to wrap */
     word-wrap: break-word; /* Ensure long words break to fit the screen */
     text-align: center; /* Center the text */

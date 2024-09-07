@@ -6,6 +6,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import queryString from 'query-string'; 
 import "./landingpage.css";
+import Navbar from "../../component/Navbar/Navbar";
 
 const LandingPage = () => {
   const dispatch = useDispatch();
@@ -41,7 +42,10 @@ const LandingPage = () => {
   console.log("data", data);
 
   return (
+    
+    
     <div className="landing-page-container">
+      
       <div style={{ flex: 1 }}>
         {isLoading ? (
           <div>Loading...</div>
@@ -53,9 +57,11 @@ const LandingPage = () => {
           <div>No data available</div>
         )}
       </div>
+      <div className="Navbar">
+      <Navbar /> {/* Use Navbar component */}
 
       {/* Button Positioned at the top-left corner */}
-      <div style={{ position: "absolute", top: "50px", left: "10px" }}>
+      <div style={{ position: "absolute", top: "0", left: "10px",zIndex: "2000" }}>
         <button
           type="button"
           onClick={handleButtonClick}
@@ -71,6 +77,7 @@ const LandingPage = () => {
           {isAuthenticated ? (userRole === "admin1" ? "Admin" : "Homepage") : "Login"}
         </button>
       </div>
+    </div>
     </div>
   );
 };
