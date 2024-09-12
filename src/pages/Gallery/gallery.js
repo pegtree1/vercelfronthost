@@ -180,6 +180,50 @@ const GalleryPage = () => {
         </div>
       </div>
 
+      <div className="section-name">
+        <h2>Website Inaugration</h2>
+        <div className="section-content">
+          <img 
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1726156770/PET%20FOLDER/website%20inaug/5_hzdjgg.jpg" 
+            alt="1" 
+            onClick={() => openModal("https://res.cloudinary.com/dxi46aisk/image/upload/v1726156770/PET%20FOLDER/website%20inaug/5_hzdjgg.jpg")} 
+          />
+          
+          <img 
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1726156769/PET%20FOLDER/website%20inaug/4_ivuun0.jpg" 
+            alt="3" 
+            onClick={() => openModal("https://res.cloudinary.com/dxi46aisk/image/upload/v1726156769/PET%20FOLDER/website%20inaug/4_ivuun0.jpg")} 
+          />
+          <img 
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1726156769/PET%20FOLDER/website%20inaug/3_ztvfes.jpg" 
+            alt="4" 
+            onClick={() => openModal("https://res.cloudinary.com/dxi46aisk/image/upload/v1726156769/PET%20FOLDER/website%20inaug/3_ztvfes.jpg")} 
+          />
+          <img 
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1726156769/PET%20FOLDER/website%20inaug/1_uioqkp.jpg" 
+            alt="5" 
+            onClick={() => openModal("https://res.cloudinary.com/dxi46aisk/image/upload/v1726156769/PET%20FOLDER/website%20inaug/1_uioqkp.jpg")} 
+          />
+          <img 
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1726156769/PET%20FOLDER/website%20inaug/2_i6kd6j.jpg" 
+            alt="6" 
+            onClick={() => openModal("https://res.cloudinary.com/dxi46aisk/image/upload/v1726156769/PET%20FOLDER/website%20inaug/2_i6kd6j.jpg")} 
+          />
+          <img 
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1726156769/PET%20FOLDER/website%20inaug/11_tu2xku.jpg" 
+            alt="7" 
+            onClick={() => openModal("https://res.cloudinary.com/dxi46aisk/image/upload/v1726156769/PET%20FOLDER/website%20inaug/11_tu2xku.jpg")} 
+          />
+          <img 
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1726156769/PET%20FOLDER/website%20inaug/10_h1wpgk.jpg" 
+            alt="8" 
+            onClick={() => openModal("https://res.cloudinary.com/dxi46aisk/image/upload/v1726156769/PET%20FOLDER/website%20inaug/10_h1wpgk.jpg")} 
+          />
+          <video src="https://res.cloudinary.com/dxi46aisk/video/upload/v1726156846/PET%20FOLDER/website%20inaug/INAUG_znvpjr.mp4" controls />
+       
+        </div>
+      </div>
+
       {/* Modal */}
       {modalIsOpen && (
         <div className="modal" onClick={closeModal}>
