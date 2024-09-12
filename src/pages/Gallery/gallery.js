@@ -181,7 +181,7 @@ const GalleryPage = () => {
       </div>
 
       <div className="section-name">
-        <h2>Website Inaugration</h2>
+        <h2>Website Inauguration</h2>
         <div className="section-content">
           <img 
             src="https://res.cloudinary.com/dxi46aisk/image/upload/v1726156770/PET%20FOLDER/website%20inaug/5_hzdjgg.jpg" 
