@@ -7,6 +7,7 @@ import { useAuth } from "../../context/AuthContext";
 import queryString from 'query-string'; 
 import "./landingpage.css";
 import Navbar from "../../component/Navbar/Navbar";
+import { Analytics } from "@vercel/analytics/react"
 
 const LandingPage = () => {
   const dispatch = useDispatch();
@@ -59,7 +60,7 @@ const LandingPage = () => {
       </div>
       <div className="Navbar">
       <Navbar /> {/* Use Navbar component */}
-
+      <Analytics/>
       {/* Button Positioned at the top-left corner */}
       <div style={{ position: "absolute", top: "0", left: "10px",zIndex: "2000" }}>
         <button
