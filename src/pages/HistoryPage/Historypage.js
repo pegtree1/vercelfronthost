@@ -26,7 +26,7 @@ const FamilyHistoryPage = () => {
 
 <p>At this meeting, Ampara Seby proposed the idea of creating a digital family tree for the Purappanthanam Cousins, which could later be expanded into a website. With strong support from committee members and all the cousins, Seby completed the data collection and entry by July 19, 2024.</p>
 
-<p>Special thanks to Rogychettan, Bobby Chettan, Dewy chettan, Monipally Sherly chechy, Sumachechy, Tessy chechy, Rosemol chechy, Tinu and Rogychettan's daughter Christy for supporting in collection of datas.</p>
+<p>Special thanks to Rogychettan, Bobby Chettan, Dewy chettan, Monipally Sherly chechy, Sumachechy, Tessy chechy, Rosemol chechy, Tinu, Lissiammachechy's son Vijish and Rogychettan's daughter Christy for supporting in collection of datas.</p>
 
 <p>The homepage is named as "Purappanthanam Elevens Teekoy" (PET).</p>
 
