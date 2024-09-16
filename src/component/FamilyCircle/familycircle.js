@@ -52,7 +52,7 @@ const children = [
   { name: 'Child 9', image: require('./images/9.jpeg'), id: 9 },
   { name: 'Child 10', image: require('./images/10.jpg'), id: 10 },
   { name: 'Child 11', image: require('./images/11.jpg'), id: 11 },
-  { name: 'PJ Joseph', image: require('./images/12.jpg'), id: 99 },
+  { name: 'PJ Joseph', image: require('./images/12.jpg'), id: 0 },
   { name: 'Child 1', image: require('./images/child1.jpg'), id: 1 },
   { name: 'Child 2', image: require('./images/2.jpg'), id: 2 },
 ];
@@ -61,9 +61,15 @@ const FamilyCircle = () => {
   return (
     <div className="circle-container">
       {children.map((child, index) => (
-        <Link key={index} to={`/familytree?id=${child.id}`} className={`circle-card card-${index}`}>
-          <img src={child.image} alt={child.name} />
-        </Link>
+        child.id !== 0  ? (
+          <Link key={index} to={`/familytree?id=${child.id}`} className={`circle-card card-${index}`}>
+            <img src={child.image} alt={child.name} />
+          </Link>
+        ) : (
+          <div key={index} className={`circle-card card-${index}`}>
+            <img src={child.image} alt={child.name} />
+          </div>
+        )
       ))}
     </div>
   );
