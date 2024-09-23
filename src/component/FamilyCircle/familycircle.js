@@ -60,7 +60,7 @@ const children = [
 const FamilyCircle = () => {
   return (
     <div className="circle-container">
-      <p className="text-color">Click on Image</p>
+      <p className="text-color">Click on any Image</p>
       {children.map((child, index) => (
         child.id !== 0  ? (
           <Link key={index} to={`/familytree?id=${child.id}`} className={`circle-card card-${index}`}>
