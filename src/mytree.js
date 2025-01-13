@@ -58,15 +58,7 @@ FamilyTree.templates.sriniz_male.up =
 FamilyTree.templates.sriniz_female.up =
     '<use x="195" y="0" xlink:href="#sriniz_female_up"></use>';
 
-// // Pointer
-// FamilyTree.templates.sriniz.pointer =
-//     '<g data-pointer="pointer" transform="matrix(0,0,0,0,80,80)">><g transform="matrix(0.3,0,0,0.3,-17,-17)">' +
-//     '<polygon fill="#039BE5" points="53.004,173.004 53.004,66.996 0,120" />' +
-//     '<polygon fill="#039BE5" points="186.996,66.996 186.996,173.004 240,120" />' +
-//     '<polygon fill="#FF46A3" points="66.996,53.004 173.004,53.004 120,0" />' +
-//     '<polygon fill="#FF46A3" points="120,240 173.004,186.996 66.996,186.996" />' +
-//     '<circle fill="red" cx="120" cy="120" r="30" />' +
-//     '</g></g>';
+
 //linewidth
 
 FamilyTree.templates.sriniz_male.link = '<path stroke-linejoin="round" stroke="#FFFFED" stroke-width="3px" fill="none" d="{rounded}" />'
@@ -76,8 +68,6 @@ FamilyTree.templates.sriniz_female.link = '<path stroke-linejoin="round" stroke=
 
 
 FamilyTree.SEARCH_PLACEHOLDER = "Search Name,Nickname,FamilyID"
-
-
 
 
 export default class Chart extends Component {
