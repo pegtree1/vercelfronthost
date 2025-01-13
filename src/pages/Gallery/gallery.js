@@ -91,7 +91,7 @@ const GalleryPage = () => {
       </div>
 
       <div className="section-name">
-        <h2>Third Cousin Borthers Meet at Erumely, 2021, </h2>
+        <h2>Third Cousin Borthers Meet at Erumely, 2021</h2>
         <div className="section-content">
           <img
             src="https://res.cloudinary.com/dxi46aisk/image/upload/v1725643359/PET%20FOLDER/MEET%20AT%20ERUMELY/e95173ce-5bc7-48ac-a448-87d46e090e67_jruore.jpg"
