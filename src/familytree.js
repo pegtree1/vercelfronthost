@@ -1200,7 +1200,8 @@ var FamilyTree = function (e, t) {
         "balkan_dotted_",
         ""
       )).indexOf("_balkan_id_");
-      if (((e = e.substring(i + 11)), (t = this.__get(e)))) return t;
+      if (((e = e.substring(i + "_balkan_id_".length)), (t = this.__get(e))))
+        return t;
     }
     return null;
   }),
@@ -1803,7 +1804,7 @@ var FamilyTree = function (e, t) {
     }
   }),
   void 0 === FamilyTree && (FamilyTree = {}),
-  (FamilyTree.VERSION = "8.14.46"),
+  (FamilyTree.VERSION = "8.14.55"),
   (FamilyTree.orientation = {}),
   (FamilyTree.orientation.top = 0),
   (FamilyTree.orientation.bottom = 1),
@@ -1944,7 +1945,7 @@ var FamilyTree = function (e, t) {
     FamilyTree.attr.control_add +
     '="control-add"><text fill="#039be5">{link}</text></g>'),
   (FamilyTree.RES = {}),
-  (FamilyTree.RES.IT_IS_LONELY_HERE_LINK =
+  (FamilyTree.IT_IS_LONELY_HERE_LINK = FamilyTree.RES.IT_IS_LONELY_HERE_LINK =
     "It's lonely here, add your first node"),
   (FamilyTree.FIRE_DRAG_NOT_CLICK_IF_MOVE = 3),
   (FamilyTree.STRING_TAGS = !1),
@@ -1983,11 +1984,12 @@ var FamilyTree = function (e, t) {
   (FamilyTree.FILTER_ALPHABETICALLY = !0),
   (FamilyTree.SERVER_PREFIX = ".azurewebsites.net/api/OrgChartJS"),
   (FamilyTree.FUNC_URL_NAME = "func-url-orgfamilyjs"),
+  (FamilyTree.MINIMUM_SYMBOLS_IN_SEARCH_INPUT = 1),
   "undefined" != typeof module && (module.exports = FamilyTree),
   (FamilyTree.SERVER_PREFIX = ".azurewebsites.net/api/FamilyTreeJS"),
   (FamilyTree.FUNC_URL_NAME = "func-url-familytreejs"),
   (FamilyTree.OC_VERSION = FamilyTree.VERSION),
-  (FamilyTree.VERSION = "1.09.40"),
+  (FamilyTree.VERSION = "1.09.44"),
   (FamilyTree.RENDER_LINKS_BEFORE_NODES = !0),
   (FamilyTree.ARRAY_FIELDS = ["tags", "pids"]),
   (FamilyTree._intersects = function (e, t, i) {
@@ -3306,10 +3308,12 @@ var FamilyTree = function (e, t) {
     }
     if (t.changedTouches.length) {
       i = FamilyTree._getTopLeft(e);
-      return {
-        x: t.changedTouches[0].pageX - i.x,
-        y: t.changedTouches[0].pageY - i.y,
-      };
+      return isNaN(i.x) || isNaN(i.y)
+        ? { x: t.changedTouches[0].pageX, y: t.changedTouches[0].pageY }
+        : {
+            x: t.changedTouches[0].pageX - i.x,
+            y: t.changedTouches[0].pageY - i.y,
+          };
     }
   }),
   (FamilyTree._pinchMiddlePointInPercent = function (e, t, i, r) {
@@ -6754,7 +6758,8 @@ var FamilyTree = function (e, t) {
           ? t._enterHandler()
           : "Escape" == e.key
           ? t.hide()
-          : t._search();
+          : this.value.length >= FamilyTree.MINIMUM_SYMBOLS_IN_SEARCH_INPUT &&
+            t._search();
       });
     var c = function () {
         var e = t.instance.element.querySelectorAll("[data-search-item-id]"),
@@ -7183,8 +7188,14 @@ var FamilyTree = function (e, t) {
       a == FamilyTree.action.init && null != o
         ? (e.collapsed = !o.exp.has(e.id))
         : a == FamilyTree.action.init
-        ? (e.collapsed =
-            t.collapse && n >= t.collapse.level - 1 && -1 == r.indexOf(e.id))
+        ? -1 != e.tags.indexOf("left-partner") ||
+          -1 != e.tags.indexOf("right-partner") ||
+          -1 != e.tags.indexOf("partner") ||
+          e.parentPartner
+          ? (e.collapsed =
+              t.collapse && n >= t.collapse.level && -1 == r.indexOf(e.id))
+          : (e.collapsed =
+              t.collapse && n >= t.collapse.level - 1 && -1 == r.indexOf(e.id))
         : a == FamilyTree.action.centerNode ||
           a == FamilyTree.action.insert ||
           a == FamilyTree.action.expand ||
@@ -7252,8 +7263,7 @@ var FamilyTree = function (e, t) {
       (e.h = g && g.size ? g.size[1] : 0),
       (e.padding = g && g.padding ? g.padding : [0, 0, 0, 0]);
     var v = { node: e };
-    FamilyTree.events.publish("node-initialized", [o, v]),
-      FamilyTree.events.publish("node-created", [e]);
+    FamilyTree.events.publish("node-initialized", [o, v]);
   }),
   (FamilyTree.manager._iterate = function (e, t, i, r, a, n, o, l, s, d, c, m) {
     var h = m.manager.layoutConfigs;
@@ -13419,10 +13429,10 @@ var FamilyTree = function (e, t) {
             if (!o) {
               var l = {
                 name: t,
-                text: "[All]",
+                text: FamilyTree.filterUI.all,
                 value: t,
                 checked: !0,
-                html: `<div>\n                        <input data-all type="checkbox" id="${t}" name="${t}" checked>\n                        <label for="${t}">[All]</label>\n                    </div>`,
+                html: `<div>\n                        <input data-all type="checkbox" id="${t}" name="${t}" checked>\n                        <label for="${t}">${FamilyTree.filterUI.all}</label>\n                    </div>`,
               };
               FamilyTree.events.publish("add-item", [p, l]);
               var s = l.html;
@@ -13435,9 +13445,9 @@ var FamilyTree = function (e, t) {
                     text: m,
                     value: d,
                     checked: c.checked,
-                    html: `<div>\n                            <input  type="checkbox" id="${d}" name="${d}" ${
+                    html: `<div>\n                            <input  type="checkbox" id="${t}_${d}" name="${d}" ${
                       c.checked ? "checked" : ""
-                    }>\n                            <label for="${d}">${m}</label>\n                        </div>`,
+                    }>\n                            <label for="${t}_${d}">${m}</label>\n                        </div>`,
                   }),
                   FamilyTree.events.publish("add-item", [p, l]),
                   (s += l.html);
@@ -13524,6 +13534,7 @@ var FamilyTree = function (e, t) {
     return FamilyTree.events.on(e, t, this._event_id), this;
   }),
   (FamilyTree.filterUI.textFilterBy = "Filter by"),
+  (FamilyTree.filterUI.all = "[All]"),
   void 0 === FamilyTree && (FamilyTree = {}),
   void 0 === FamilyTree.remote && (FamilyTree.remote = {}),
   (FamilyTree.LIMIT_NODES = !0),
@@ -13539,38 +13550,38 @@ var FamilyTree = function (e, t) {
       FamilyTree.remote._fromResDTO(e.stChildren[o], t, i, r, a);
     for (o = 0; o < e.children.length; o++)
       FamilyTree.remote._fromResDTO(e.children[o], t, i, r, a);
-  }),
-  (FamilyTree.remote._toReqDTO = function (e, t) {
-    var i = {
-      p: [
-        e.id,
-        null != e.parent ? e.parent.id : null,
-        null != e.stParent ? e.stParent.id : null,
-        e.w,
-        e.h,
-      ],
-    };
-    e.children.length > 0 &&
-      (i.c = FamilyTree.remote._convertToIdArray(e.children)),
-      e.stChildren.length > 0 &&
-        (i.v = FamilyTree.remote._convertToIdArray(e.stChildren)),
-      null != e.layout && 0 != e.layout && (i.l = e.layout),
-      e.isAssistant && (i.a = 1),
-      e.isSplit && (i.s = e.isSplit),
-      e.isMirror && (i.im = e.isMirror),
-      e.padding && (i.q = e.padding),
-      e.lcn && (i.k = e.lcn),
-      e.stContainerNodes &&
-        (i.b = FamilyTree.remote._convertToIdArray(e.stContainerNodes)),
-      e.isPartner && (i.i = e.isPartner),
-      e.hasPartners && (i.g = e.hasPartners),
-      e.partnerSeparation && (i.e = e.partnerSeparation),
-      t.push(i);
-    for (var r = 0; r < e.stChildren.length; r++)
-      FamilyTree.remote._toReqDTO(e.stChildren[r], t);
-    for (r = 0; r < e.children.length; r++)
-      FamilyTree.remote._toReqDTO(e.children[r], t);
-  }),
+  });
+(FamilyTree.remote._toReqDTO = function (e, t) {
+  var i = {
+    p: [
+      e.id,
+      null != e.parent ? e.parent.id : null,
+      null != e.stParent ? e.stParent.id : null,
+      e.w,
+      e.h,
+    ],
+  };
+  e.children.length > 0 &&
+    (i.c = FamilyTree.remote._convertToIdArray(e.children)),
+    e.stChildren.length > 0 &&
+      (i.v = FamilyTree.remote._convertToIdArray(e.stChildren)),
+    null != e.layout && 0 != e.layout && (i.l = e.layout),
+    e.isAssistant && (i.a = 1),
+    e.isSplit && (i.s = e.isSplit),
+    e.isMirror && (i.im = e.isMirror),
+    e.padding && (i.q = e.padding),
+    e.lcn && (i.k = e.lcn),
+    e.stContainerNodes &&
+      (i.b = FamilyTree.remote._convertToIdArray(e.stContainerNodes)),
+    e.isPartner && (i.i = e.isPartner),
+    e.hasPartners && (i.g = e.hasPartners),
+    e.partnerSeparation && (i.e = e.partnerSeparation),
+    t.push(i);
+  for (var r = 0; r < e.stChildren.length; r++)
+    FamilyTree.remote._toReqDTO(e.stChildren[r], t);
+  for (r = 0; r < e.children.length; r++)
+    FamilyTree.remote._toReqDTO(e.children[r], t);
+}),
   (FamilyTree.remote._toReqLayoutConfigsDTO = function (e) {
     var t = {};
     for (var i in e) {
@@ -13588,11 +13599,11 @@ var FamilyTree = function (e, t) {
         (t[i][9] = r.partnerNodeSeparation);
     }
     return t;
-  });
-(FamilyTree.remote._convertToIdArray = function (e) {
-  for (var t = [], i = 0; i < e.length; i++) t.push(e[i].id);
-  return t;
-}),
+  }),
+  (FamilyTree.remote._convertToIdArray = function (e) {
+    for (var t = [], i = 0; i < e.length; i++) t.push(e[i].id);
+    return t;
+  }),
   (FamilyTree.remote._setPositions = function (e, t, i, r) {
     for (
       var a = [],

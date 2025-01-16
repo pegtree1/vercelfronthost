@@ -23,7 +23,7 @@ const GalleryPage = () => {
       </div>
 
       <div className="section-name">
-        <h2>First Cousin Brothers Meet at Ampara, 2019</h2>
+        <h2>First, Cousin Brothers Meet at Ampara 2019</h2>
         <div className="section-content">
           <img
             src="https://res.cloudinary.com/dxi46aisk/image/upload/v1725639363/PET%20FOLDER/FIRST%20MEET%20AMPARA/IMG_1931_k3qcdt.jpg"
@@ -91,7 +91,7 @@ const GalleryPage = () => {
       </div>
 
       <div className="section-name">
-        <h2>Third Cousin Borthers Meet at Erumely, 2021</h2>
+        <h2>Third, Cousin Brothers Meet at Erumely 2021</h2>
         <div className="section-content">
           <img
             src="https://res.cloudinary.com/dxi46aisk/image/upload/v1725643359/PET%20FOLDER/MEET%20AT%20ERUMELY/e95173ce-5bc7-48ac-a448-87d46e090e67_jruore.jpg"
@@ -133,7 +133,7 @@ const GalleryPage = () => {
       </div>
 
       <div className="section-name">
-        <h2>First Cousins Meet at Anakkalu, 2022</h2>
+        <h2>First, Cousins Meet at Anakkalu 2022</h2>
         <div className="section-content">
           <img
             src="https://res.cloudinary.com/dxi46aisk/image/upload/v1725644379/PET%20FOLDER/ANAKKALU/2ae2e9a0-073b-4f43-a6b2-41cb93da40e7_mwpvqv.jpg"
@@ -184,7 +184,7 @@ const GalleryPage = () => {
       </div>
 
       <div className="section-name">
-        <h2>Second Cousins Meet at Edamaruku, 2023</h2>
+        <h2>Second, Cousins Meet at Edamaruku 2023</h2>
         <div className="section-content">
           <img
             src="https://res.cloudinary.com/dxi46aisk/image/upload/v1725643606/PET%20FOLDER/MEET%20AT%20ERUMELY/EDAMURUKU/4384bddd-6917-4e00-9225-b75c73ac5b21_i3bjdb.jpg"
@@ -298,7 +298,7 @@ const GalleryPage = () => {
       </div>
 
       <div className="section-name">
-        <h2>Website Inauguration, 2024</h2>
+        <h2>Website Inauguration 2024</h2>
         <div className="section-content">
           <img
             src="https://res.cloudinary.com/dxi46aisk/image/upload/v1726156770/PET%20FOLDER/website%20inaug/5_hzdjgg.jpg"
@@ -372,9 +372,9 @@ const GalleryPage = () => {
       </div>
 
       <div className="section-name">
-        <h2>Purappanthanam Elevens Teekoy (PET) Third Cousins Meet, 2024</h2>
+        <h2>Purappanthanam Elevens Teekoy (PET) Third, Cousins Meet 2024</h2>
         <div className="section-content">
-          <img
+        <img
             src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764371/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_c4zixu.jpg"
             alt="4"
             onClick={() =>
@@ -384,180 +384,7 @@ const GalleryPage = () => {
             }
           />
 
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764368/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_4_szpio1.jpg"
-            alt="25"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764368/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_4_szpio1.jpg"
-              )
-            }
-          />
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_19_bkho9e.jpg"
-            alt="26"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_19_bkho9e.jpg"
-              )
-            }
-          />
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764368/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_3_lsacrs.jpg"
-            alt="27"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764368/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_3_lsacrs.jpg"
-              )
-            }
-          />
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764368/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_18_ly7bne.jpg"
-            alt="28"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764368/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_18_ly7bne.jpg"
-              )
-            }
-          />
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764368/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_8_qvlbdb.jpg"
-            alt="29"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764368/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_8_qvlbdb.jpg"
-              )
-            }
-          />
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_16_ns5kbv.jpg"
-            alt="30"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_16_ns5kbv.jpg"
-              )
-            }
-          />
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764367/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_2_p8gsgk.jpg"
-            alt="31"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764367/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_2_p8gsgk.jpg"
-              )
-            }
-          />
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764367/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_1_ea0ljk.jpg"
-            alt="32"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764367/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_1_ea0ljk.jpg"
-              )
-            }
-          />
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_7_jcyb84.jpg"
-            alt="33"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_7_jcyb84.jpg"
-              )
-            }
-          />
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_17_wxgyoy.jpg"
-            alt="34"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_17_wxgyoy.jpg"
-              )
-            }
-          />
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_6_yn3ybd.jpg"
-            alt="35"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_6_yn3ybd.jpg"
-              )
-            }
-          />
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_5_rimqbm.jpg"
-            alt="36"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_5_rimqbm.jpg"
-              )
-            }
-          />
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764385/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_9_tlu2ao.jpg"
-            alt="1"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764385/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_9_tlu2ao.jpg"
-              )
-            }
-          />
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764371/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_12_fzflxn.jpg"
-            alt="2"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764371/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_12_fzflxn.jpg"
-              )
-            }
-          />
-
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764371/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_14_rmpiri.jpg"
-            alt="7"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764371/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_14_rmpiri.jpg"
-              )
-            }
-          />
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764371/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_15_rihz0p.jpg"
-            alt="3"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764371/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_15_rihz0p.jpg"
-              )
-            }
-          />
-
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764371/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_10_emeeug.jpg"
-            alt="6"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764371/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_10_emeeug.jpg"
-              )
-            }
-          />
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764370/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_7_ecfxqn.jpg"
-            alt="10"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764370/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_7_ecfxqn.jpg"
-              )
-            }
-          />
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764370/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_8_smokd3.jpg"
-            alt="11"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764370/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_8_smokd3.jpg"
-              )
-            }
-          />
-          <img
+        <img
             src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764369/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_4_oazw9n.jpg"
             alt="12"
             onClick={() =>
@@ -566,34 +393,9 @@ const GalleryPage = () => {
               )
             }
           />
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764370/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_5_rddry6.jpg"
-            alt="13"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764370/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_5_rddry6.jpg"
-              )
-            }
-          />
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764369/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_urmqjc.jpg"
-            alt="14"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764369/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_urmqjc.jpg"
-              )
-            }
-          />
-          <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764370/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_6_ebycl9.jpg"
-            alt="15"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764370/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_6_ebycl9.jpg"
-              )
-            }
-          />
-          <img
+
+
+<img
             src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764370/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_3_wr2ljn.jpg"
             alt="16"
             onClick={() =>
@@ -612,15 +414,6 @@ const GalleryPage = () => {
             }
           />
           <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764370/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_11_lhhq0w.jpg"
-            alt="18"
-            onClick={() =>
-              openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764370/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_11_lhhq0w.jpg"
-              )
-            }
-          />
-          <img
             src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764369/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_2_wew09z.jpg"
             alt="19"
             onClick={() =>
@@ -629,15 +422,253 @@ const GalleryPage = () => {
               )
             }
           />
+
+
+
           <img
-            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764369/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_13_uhfyqa.jpg"
-            alt="20"
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764370/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_8_smokd3.jpg"
+            alt="11"
             onClick={() =>
               openModal(
-                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764369/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_13_uhfyqa.jpg"
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764370/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_8_smokd3.jpg"
               )
             }
           />
+
+
+
+          <img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764370/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_7_ecfxqn.jpg"
+            alt="10"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764370/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_7_ecfxqn.jpg"
+              )
+            }
+          />
+
+
+          <img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764370/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_5_rddry6.jpg"
+            alt="13"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764370/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_5_rddry6.jpg"
+              )
+            }
+          />
+
+          <img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764370/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_6_ebycl9.jpg"
+            alt="15"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764370/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_6_ebycl9.jpg"
+              )
+            }
+          />
+
+
+          <img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764385/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_9_tlu2ao.jpg"
+            alt="1"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764385/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_9_tlu2ao.jpg"
+              )
+            }
+          />
+
+<img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764371/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_10_emeeug.jpg"
+            alt="6"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764371/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_10_emeeug.jpg"
+              )
+            }
+          />
+
+
+
+
+
+
+<img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764371/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_12_fzflxn.jpg"
+            alt="2"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764371/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_12_fzflxn.jpg"
+              )
+            }
+          />
+
+
+<img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764370/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_11_lhhq0w.jpg"
+            alt="18"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764370/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_11_lhhq0w.jpg"
+              )
+            }
+          />
+
+
+
+
+<img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764371/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_13_qrlj8j.jpg"
+            alt="7"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764371/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_13_qrlj8j.jpg"
+              )
+            }
+          />
+
+
+
+          <img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764371/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_14_rmpiri.jpg"
+            alt="7"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764371/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_14_rmpiri.jpg"
+              )
+            }
+          />
+
+
+
+
+          <img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764371/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_15_rihz0p.jpg"
+            alt="3"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764371/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_15_rihz0p.jpg"
+              )
+            }
+          />
+
+
+
+
+<img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_16_ns5kbv.jpg"
+            alt="30"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_16_ns5kbv.jpg"
+              )
+            }
+          />
+
+
+<img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_17_wxgyoy.jpg"
+            alt="34"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_17_wxgyoy.jpg"
+              )
+            }
+          />
+
+<img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764368/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_18_ly7bne.jpg"
+            alt="28"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764368/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_18_ly7bne.jpg"
+              )
+            }
+          />
+
+          <img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_19_bkho9e.jpg"
+            alt="26"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.26_PM_19_bkho9e.jpg"
+              )
+            }
+          />
+
+          
+<img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764369/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_urmqjc.jpg"
+            alt="14"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764369/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_urmqjc.jpg"
+              )
+            }
+          />
+          
+
+          <img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764367/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_1_ea0ljk.jpg"
+            alt="32"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764367/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_1_ea0ljk.jpg"
+              )
+            }
+          />
+
+
+<img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764367/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_2_p8gsgk.jpg"
+            alt="31"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764367/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_2_p8gsgk.jpg"
+              )
+            }
+          />
+
+
+ <img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764368/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_3_lsacrs.jpg"
+            alt="27"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764368/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_3_lsacrs.jpg"
+              )
+            }
+          />
+
+<img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764368/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_4_szpio1.jpg"
+            alt="25"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764368/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_4_szpio1.jpg"
+              )
+            }
+          />
+
+          <img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_5_rimqbm.jpg"
+            alt="36"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_5_rimqbm.jpg"
+              )
+            }
+          />
+
+
+
+
+
+
+
+
+
           <img
             src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764369/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_12_igf1hc.jpg"
             alt="21"
@@ -665,7 +696,9 @@ const GalleryPage = () => {
               )
             }
           />
-          <img
+
+
+<img
             src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764369/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_9_qsdj65.jpg"
             alt="24"
             onClick={() =>
@@ -674,6 +707,54 @@ const GalleryPage = () => {
               )
             }
           />
+         
+
+          <img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764368/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_8_qvlbdb.jpg"
+            alt="29"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764368/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_8_qvlbdb.jpg"
+              )
+            }
+          />
+
+
+<img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764369/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_13_uhfyqa.jpg"
+            alt="20"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764369/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_13_uhfyqa.jpg"
+              )
+            }
+          />
+
+
+          <img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_7_jcyb84.jpg"
+            alt="33"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_7_jcyb84.jpg"
+              )
+            }
+          />
+
+          <img
+            src="https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_6_yn3ybd.jpg"
+            alt="35"
+            onClick={() =>
+              openModal(
+                "https://res.cloudinary.com/dxi46aisk/image/upload/v1736764366/PET%20FOLDER/2025%20meet%20at%20teekoy/WhatsApp_Image_2025-01-12_at_9.58.27_PM_6_yn3ybd.jpg"
+              )
+            }
+          />
+
+
+
+
+ 
         </div>
       </div>
 

@@ -731,7 +731,8 @@ declare class FamilyTree extends FamilyTreeBase {
     static wrapText(text: string, field: Object): string;
 
     static filterUI: {
-        textFilterBy: string
+        textFilterBy: string,
+        all: string,
     };
 
     /**
@@ -751,8 +752,8 @@ declare class FamilyTree extends FamilyTreeBase {
     }
 
 
-    static templates :{ [key: string]: FamilyTree.template} ;
-
+    static templates: { [key: string]: FamilyTree.template} ;
+    
 
     static scroll: {
         visible?: boolean,
@@ -768,15 +769,27 @@ declare class FamilyTree extends FamilyTreeBase {
 
     static events: {
         /**
-         * node-created and layout event listeners are obsolete use node-initialized or node-layout instead
+         * layout event listener is obsolete, use node-layout instead
          * @param type 
          * @param listener 
          */
-        on(type: "node-created" | "layout", listener: (args: any, args1: any, args2: any) => void): void
+        on(type: "layout", listener: (args: any, args1: any, args2: any) => void): void
     };
     static state: { clear(stateName: string): void };
 
     static animate(element: Object, attrStart?: Object, attrEnd?: Object, duration?: number, func?: FamilyTree.anim, callback?: Function, tick?: boolean): void;
+
+    static miniMap: {
+        colors: Array<string>,
+        selectorBackgroundColor: string,
+        focusStroke: string,
+        opacity: number,
+        border: string,
+        width: number,
+        height: number,
+        padding: number,
+        position: Object
+    };
 
     static VERSION: string;
     /**
@@ -804,6 +817,7 @@ declare class FamilyTree extends FamilyTreeBase {
     * @ignore
     */
     static IT_IS_LONELY_HERE: string;
+    static IT_IS_LONELY_HERE_LINK: string;
     /**
     * @ignore
     */
@@ -813,6 +827,8 @@ declare class FamilyTree extends FamilyTreeBase {
         */
         IT_IS_LONELY_HERE_LINK: string
     };
+
+
     /**
     * @ignore
     */
@@ -895,6 +911,11 @@ declare class FamilyTree extends FamilyTreeBase {
      * The init event listener will be called as soon as the FamilyTree become visible.
      */
     static LAZY_LOADING: boolean;
+
+    /**
+     * Minimum in search input before triggering the  search.
+     */
+    static MINIMUM_SYMBOLS_IN_SEARCH_INPUT: number;
    
     /**
      * Hides the Edit Form when the family is moved with pan
@@ -1197,7 +1218,7 @@ declare namespace FamilyTree {
         /**
          * Search in field with abbreviation.
          */
-        searchFieldsAbbreviation: {[key: string]: string};
+        searchFieldsAbbreviation: {[key: string]: string};        
     }
 
     
@@ -2330,33 +2351,6 @@ declare namespace FamilyTree {
          * ```          
          */        
         exportUrl?: string,
-        /**
-         * Collapse specified level of the family and its children if allChildren is true.
-         * ```typescript       
-         * var family = new FamilyTree('#tree', {
-         *   collapse: {level: 2, allChildren: true}
-         * });
-         * ```          
-         */         
-        collapse?: {
-            level: number,
-            allChildren?: boolean
-        },
-        /**
-         * Expand specified node ids and its children if allChildren is true. The expand option works only if collapse is set.
-         * 
-         * In the example above the second level of the family will be collapsed but node with id 155 and its children will be expanded.
-         * ```typescript       
-         * var family = new FamilyTree('#tree', {
-         *   collapse: {level: 2, allChildren: true},
-         *   expand: {nodes: [155], allChildren: true}
-         * });
-         * ```          
-         */         
-        expand?: {
-            nodes?: Array<string | number>,
-            allChildren?: boolean
-        },
         /**
          * The align option specifies the alignment of the nodes inside Family Tree JS.
          * - FamilyTree.align.center - centered
