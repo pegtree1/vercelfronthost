@@ -750,6 +750,43 @@ const GalleryPage = () => {
               )
             }
           />
+          
+          
+          <video
+            src="https://res.cloudinary.com/dxi46aisk/video/upload/v1737132164/PET%20FOLDER/2025%20meet%20at%20teekoy/videos/1.mp4"
+            controls
+          />
+
+<video
+            src="https://res.cloudinary.com/dxi46aisk/video/upload/v1737132197/PET%20FOLDER/2025%20meet%20at%20teekoy/videos/2.mp4"
+            controls
+          />
+<video
+            src="https://res.cloudinary.com/dxi46aisk/video/upload/v1737132268/PET%20FOLDER/2025%20meet%20at%20teekoy/videos/3.mp4"
+            controls
+          />
+<video
+            src="https://res.cloudinary.com/dxi46aisk/video/upload/v1737132290/PET%20FOLDER/2025%20meet%20at%20teekoy/videos/4.mp4"
+            controls
+          />
+
+<video
+            src="https://res.cloudinary.com/dxi46aisk/video/upload/v1737132518/PET%20FOLDER/2025%20meet%20at%20teekoy/videos/4_1.mp4"
+            controls
+          />
+ <video
+            src="https://res.cloudinary.com/dxi46aisk/video/upload/v1737132557/PET%20FOLDER/2025%20meet%20at%20teekoy/videos/7.mp4"
+            controls
+          />
+
+<video
+            src="https://res.cloudinary.com/dxi46aisk/video/upload/v1737132434/PET%20FOLDER/2025%20meet%20at%20teekoy/videos/5.mp4"
+            controls
+          />
+<video
+            src="https://res.cloudinary.com/dxi46aisk/video/upload/v1737132469/PET%20FOLDER/2025%20meet%20at%20teekoy/videos/6.mp4"
+            controls
+          />
 
 
 
